@@ -46,3 +46,4 @@ clean:
 	rm -fr target
 	rm -fr src/main/resources/NATIVE
 	rm -f .*.stamp
+	rm -f re2-patch.txt
