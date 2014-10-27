@@ -1,6 +1,5 @@
 package com.logentries.re2_test;
 
-import com.logentries.re2.EmbeddedLibraryTools;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -161,8 +160,6 @@ public class TestRandomExpr {
 
     @Test
     public void testRandRE2() {
-        System.out.println(EmbeddedLibraryTools.LOADED_RE2_JAVA);
-
         class Worker implements Runnable {
             public void run() {
                 for (int i = 0; i < 2000; ++i) {
