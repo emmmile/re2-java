@@ -1,5 +1,6 @@
 package com.logentries.re2_test;
 
+import com.logentries.re2.EmbeddedLibraryTools;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -26,6 +27,8 @@ public class TestThreads {
     }
     @Test
     public void testThreads() {
+        System.out.println(EmbeddedLibraryTools.LOADED_RE2_JAVA);
+
         class Worker implements Runnable {
             public void xxx() {
                 final boolean res1 = RE2.fullMatch("hello", "(h.*o)");

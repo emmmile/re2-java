@@ -80,7 +80,7 @@ public class EmbeddedLibraryTools {
                         out.write(buffer, 0, len);
                     out.close();
                     in.close();
-                    System.load(libfile.getAbsolutePath());
+                    System.loadLibrary(libfile.getAbsolutePath());
                     libfile.delete();
                     return true;
                 } catch (IOException x) {

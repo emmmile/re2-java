@@ -2,6 +2,7 @@ package com.logentries.re2_test;
 
 import java.util.Arrays;
 
+import com.logentries.re2.EmbeddedLibraryTools;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
