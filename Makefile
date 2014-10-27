@@ -12,7 +12,9 @@ build: $(OBJ)/libre2-java.so class
 .re2.download.stamp:
 #	hg clone https://re2.googlecode.com/hg re2
 	wget http://re2.googlecode.com/files/re2-20121029.tgz -O re2.tgz
+	wget https://gist.githubusercontent.com/emmmile/c581a8b7fba9c98df647/raw/f3fa62d6e8c8a6b5fbbb320a0001993bf0f02fe9/re2-patch.txt
 	tar xvf re2.tgz
+	patch -p0 -R re2-patch.txt
 	touch .re2.download.stamp
 
 .re2.compile.stamp: .re2.download.stamp
